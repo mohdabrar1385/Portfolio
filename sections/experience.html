@@ -1,0 +1,69 @@
+<section id="experience" class="py-12 bg-black bg-opacity-80">
+    <style>
+        .card-experience {
+            color: #ffffff;
+            padding: 1.5rem;
+            border-radius: 0.5rem;
+        }
+        .card-experience:hover {
+        transform: scale(1.05); /* Scale the card on hover */
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+        transition: all 0.3s ease;
+         }
+    </style>
+    <div class="container mx-auto">
+        <h2 class="text-2xl font-bold mb-4">Work Experience</h2>
+        <div class="space-y-8">
+            <div class="card-experience bg-gradient-to-r from-green-400 to-blue-500 text-white p-6 rounded-lg">
+                <h3 class="text-xl font-semibold">Software Engineering Intern, Procter & Gamble, USA</h3>
+                <p class="text-white/80">Jan 2024 – Dec 2024</p>
+                <button class="mt-2 text-blue-500 toggle-details" data-target="job1">View Details</button>
+                <ul id="job1" class="list-disc list-inside mt-2 hidden">
+                    <li>Developed and maintained a full-stack web application for university students to track and manage academic progress.</li>
+                    <li>Implemented React.js for the frontend and Node.js with Express for the backend, facilitating real-time updates.</li>
+                    <li>Integrated frontend and backend using RESTful APIs, improving data handling, and reducing page load times by 40%.</li>
+                    <li>Integrated PostgreSQL for relational data storage and optimized queries to improve performance, reducing query load by 35%.</li>
+                    <li>Utilized Docker to containerize applications, enabling consistent environments across development and production stages.</li>
+                    <li>Built CI/CD pipelines using GitHub Actions, automating tests and deployments to a Kubernetes-based cloud environment.</li>
+                    <li>Collaborated in an Agile environment with cross-functional teams, conducting retrospectives and writing user stories.</li>
+                </ul>
+            </div>
+
+            <div class="card-experience bg-gradient-to-r from-green-400 to-blue-500 text-white p-6 rounded-lg">
+                <h3 class="text-xl font-semibold">Graduate Teaching Assistant, University of Cincinnati, USA</h3>
+                <p class="text-white/80">Aug 2022 – Dec 2023</p>
+                <button class="mt-2 text-blue-500 toggle-details" data-target="job2">View Details</button>
+                <ul id="job2" class="list-disc list-inside mt-2 hidden">
+                    <li>Served as a Teaching Assistant for multiple Computer Science courses, including AI, Data Analysis, Automata Theory, and Discrete Structures.</li>
+                    <li>Graded assignments, conducted recitations, and provided support for over 400 students.</li>
+                </ul>
+            </div>
+
+            <div class="card-experience bg-gradient-to-r from-green-400 to-blue-500 text-white p-6 rounded-lg">
+                <h3 class="text-xl font-semibold">Software Engineer, NTT Data</h3>
+                <p class="text-white/80">Sep 2021 – Jul 2022</p>
+                <button class="mt-2 text-blue-500 toggle-details" data-target="job3">View Details</button>
+                <ul id="job3" class="list-disc list-inside mt-2 hidden">
+                    <li>Spearheaded the development of an inventory management system using React for the frontend and Go for the backend.</li>
+                    <li>Led the migration of legacy Java services to a cloud-native architecture.</li>
+                    <li>Created APIs with Golang and MySQL, enabling smooth data communication between frontend and backend systems and reducing data retrieval times by 40%.</li>
+                    <li>Implemented Docker for containerization and Kubernetes for orchestrating the app across multiple microservices, improving scalability and reliability.</li>
+                    <li>Created a CI/CD pipeline using Jenkins, automating the build, test, and deployment process, reducing release times by 50%.</li>
+                    <li>Optimized application performance and increased server uptime by 30% by implementing automated monitoring and logging using Prometheus and Grafana.</li>
+                </ul>
+            </div>
+
+            <div class="card-experience bg-gradient-to-r from-green-400 to-blue-500 text-white p-6 rounded-lg">
+                <h3 class="text-xl font-semibold">Software Engineering Intern, Techmars, India</h3>
+                <p class="text-white/80">Jun 2020 – Aug 2020</p>
+                <button class="mt-2 text-blue-500 toggle-details" data-target="job4">View Details</button>
+                <ul id="job4" class="list-disc list-inside mt-2 hidden">
+                    <li>Contributed to the development of an e-commerce platform using React Native and Flask for the backend.</li>
+                    <li>Developed the mobile app for both iOS and Android, enabling users to browse products, place orders, and track deliveries.</li>
+                    <li>Created RESTful APIs using Flask, connecting the mobile app to a MongoDB database for flexible product data storage.</li>
+                    <li>Utilized GIT for version control and Jira for project management, ensuring organized task tracking and project development.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>

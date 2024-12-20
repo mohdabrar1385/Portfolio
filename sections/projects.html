@@ -1,0 +1,43 @@
+<section id="projects" class="py-12 bg-black bg-opacity-80">
+
+    <style>
+        /* Unique style for the projects card */
+        .projects-card {
+            background: #2196F3;
+            color: #ffffff;
+            padding: 1.5rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .projects-card h3 {
+            font-size: 1.25rem;
+            font-weight: bold;
+        }
+
+        .projects-card p {
+            font-size: 1rem;
+        }
+
+        .projects-card:hover {
+        transform: scale(1.05); /* Scale the card on hover */
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+        transition: all 0.3s ease;
+         }
+    </style>
+    <div class="container mx-auto">
+        <h2 class="text-2xl font-bold mb-4">Projects</h2>
+        <div class="space-y-4">
+            <div class="projects-card bg-gradient-to-r from-pink-500 to-purple-500 text-white p-6 rounded-lg">
+                <h3 class="text-xl font-semibold">Collaborative Document Editor</h3>
+                <p>Technologies: React, Node.js, MongoDB, WebSocket</p>
+                <p>Created a real-time document editor enabling simultaneous collaboration for multiple users.</p>
+            </div>
+            <div class="projects-card bg-gradient-to-r from-blue-500 to-teal-500 text-white p-6 rounded-lg">
+                <h3 class="text-xl font-semibold">Voice Prescription Application</h3>
+                <p>Technologies: React Native, Firebase</p>
+                <p>Developed a Voice Prescription application that enables doctors to create and send prescriptions using voice commands.</p>
+            </div>
+        </div>
+    </div>
+</section>

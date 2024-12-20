@@ -4,149 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Abrar's Portfolio</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <style>
-        html {
-            scroll-behavior: smooth;
-        }
-        .card {
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
-        .card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
-        }
-    </style>
+    <!-- Link to the external CSS file -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <!-- Add the Boxicons CDN link here -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
 </head>
-<body class="bg-gray-100 text-gray-800">
-    <!-- Header -->
-    <header class="bg-blue-600 text-white py-6">
-        <div class="container mx-auto flex justify-between items-center">
-            <h1 class="text-3xl font-bold">Abrar's Portfolio</h1>
-            <nav>
-                <ul class="flex space-x-6">
-                    <!-- Smooth navigation when clicking these links -->
-                    <li><a href="#summary" class="hover:underline">Summary</a></li>
-                    <li><a href="#experience" class="hover:underline">Experience</a></li>
-                    <li><a href="#education" class="hover:underline">Education</a></li>
-                    <li><a href="#projects" class="hover:underline">Projects</a></li>
-                    <li><a href="#skills" class="hover:underline">Skills</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+<body>
+    <!-- Section containers -->
+    <div id="header"></div>
+    <div id="summary"></div>
+    <div id="experience"></div>
+    <div id="education"></div>
+    <div id="projects"></div>
+    <div id="skills"></div>
+    <div id="footer"></div>
 
-    <!-- Professional Summary -->
-    <section id="summary" class="py-12 bg-white">
-        <div class="container mx-auto">
-            <h2 class="text-2xl font-bold mb-4">Professional Summary</h2>
-            <div class="card bg-gradient-to-r from-purple-500 to-indigo-500 text-white p-6 rounded-lg">
-                <p>Software Engineer with over 3 years of experience in full-stack development, cloud computing, and DevOps. Skilled in React, Node.js, Go, Python, and PostgreSQL, with a focus on building scalable and efficient applications. Experienced in containerization (Docker/Kubernetes), CI/CD automation, and microservices architecture. Strong collaborator in Agile teams, delivering high-impact solutions and optimizing system performance.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Work Experience -->
-    <section id="experience" class="py-12 bg-gray-50">
-        <div class="container mx-auto">
-            <h2 class="text-2xl font-bold mb-4">Work Experience</h2>
-            <div class="space-y-8">
-                <!-- Example Job Card with colorful styling -->
-                <div class="card bg-gradient-to-r from-green-400 to-blue-500 text-white p-6 rounded-lg">
-                    <h3 class="text-xl font-semibold">Software Engineer, Procter & Gamble, USA</h3>
-                    <p class="text-white/80">Jan 2024 – Dec 2024</p>
-                    <button class="mt-2 text-blue-500" onclick="toggleDetails('job2')">View Details</button>
-                    <ul id="job2" class="list-disc list-inside mt-2 hidden">
-                        <li>Developed and maintained a full-stack web application for university students to track and manage academic progress.</li>
-                        <li>Integrated frontend and backend using RESTful APIs, improving data handling and reducing page load times by 40%.</li>
-                        <li>Utilized Docker to containerize applications and built CI/CD pipelines using GitHub Actions.</li>
-                    </ul>
-                </div>
-                <!-- Add other jobs similarly -->
-            </div>
-        </div>
-    </section>
+    <!-- Link to the external JavaScript file -->
+    <script src="assets/js/scripts.js"></script>
 
 
-    <!-- Education -->
-    <section id="education" class="py-12 bg-white">
-        <div class="container mx-auto">
-            <h2 class="text-2xl font-bold mb-4">Education</h2>
-            <div class="card bg-gradient-to-r from-yellow-400 to-red-400 text-white p-6 rounded-lg">
-                <ul class="list-disc list-inside">
-                    <li>MS in Computer Science, University of Cincinnati, USA (GPA: 4.0/4.0)</li>
-                    <li>BE in Computer Science and Engineering, Osmania University (GPA: 3.8/4.0)</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects -->
-    <section id="projects" class="py-12 bg-gray-50">
-        <div class="container mx-auto">
-            <h2 class="text-2xl font-bold mb-4">Projects</h2>
-            <div class="space-y-4">
-                <div class="card bg-gradient-to-r from-pink-500 to-purple-500 text-white p-6 rounded-lg">
-                    <h3 class="text-xl font-semibold">Collaborative Document Editor</h3>
-                    <p>Technologies: React, Node.js, MongoDB, WebSocket</p>
-                    <p>Created a real-time document editor enabling simultaneous collaboration for multiple users.</p>
-                </div>
-                <div class="card bg-gradient-to-r from-blue-500 to-teal-500 text-white p-6 rounded-lg">
-                    <h3 class="text-xl font-semibold">Voice Prescription Application</h3>
-                    <p>Technologies: React Native, Firebase</p>
-                    <p>Developed a Voice Prescription application that enables doctors to create and send prescriptions using voice commands.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills -->
-    <section id="skills" class="py-12 bg-white">
-        <div class="container mx-auto">
-            <h2 class="text-2xl font-bold mb-4">Skills</h2>
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-                <div class="card bg-gradient-to-r from-indigo-500 to-blue-500 text-white p-4 rounded-lg text-center"><i class="fab fa-react text-xl"></i> React</div>
-                <div class="card bg-gradient-to-r from-green-500 to-yellow-500 text-white p-4 rounded-lg text-center"><i class="fab fa-node-js text-xl"></i> Node.js</div>
-                <div class="card bg-gradient-to-r from-red-500 to-pink-500 text-white p-4 rounded-lg text-center"><i class="fas fa-database text-xl"></i> PostgreSQL</div>
-                <div class="card bg-gradient-to-r from-yellow-500 to-orange-500 text-white p-4 rounded-lg text-center"><i class="fab fa-python text-xl"></i> Python</div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-blue-600 text-white py-6">
-        <div class="container mx-auto text-center">
-            <p>© 2024 Abrar. All rights reserved.</p>
-            <p>Connect on <a href="https://www.linkedin.com" class="underline">LinkedIn</a> | <a href="https://github.com" class="underline">GitHub</a></p>
-        </div>
-    </footer>
-
-    <!-- JavaScript for smooth scrolling -->
-    <script>
-        // Smooth scrolling for navigation links
-        document.querySelectorAll('nav a').forEach(link => {
-            link.addEventListener('click', event => {
-                event.preventDefault();
-                const targetId = link.getAttribute('href').substring(1);
-                const targetElement = document.getElementById(targetId);
-                if (targetElement) {
-                    window.scrollTo({
-                        top: targetElement.offsetTop - 50, // Adjust for header height
-                        behavior: 'smooth'
-                    });
-                }
-            });
-        });
-
-        function toggleDetails(id) {
-            const details = document.getElementById(id);
-            if (details.classList.contains('hidden')) {
-                details.classList.remove('hidden');
-            } else {
-                details.classList.add('hidden');
-            }
-        }
-    </script>
 </body>
 </html>

@@ -1,0 +1,137 @@
+<header>
+    <style>
+
+        /* Add smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 160px; /* Adjust this value to match your header's height */
+        }
+        /* Fix the header at the top */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            color: white;
+            background-color: #3a5584; /* You can change the background color if needed */
+            z-index: 1000;
+            padding: 0; /* Adjust padding as necessary */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: adds a shadow effect */
+            display: flex;
+            justify-content: center; /* Center content horizontally */
+            align-items: center; /* Center content vertically */
+            height: 170px; /* Adjust height as necessary */
+            text-align: center;
+        }
+
+        /* Add margin to body content to ensure it isn't hidden behind the fixed header */
+        body {
+            margin-top: 160px; /* Adjust this based on the header height */
+        }
+
+        section{
+            padding: 150px;
+        }
+        
+
+      
+        
+
+        /* Profile picture */
+        .profile-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            
+            margin-bottom: 15px; /* Adjust spacing below profile image */
+        }
+
+        .profile-container img {
+            border-radius: 50%;
+            width: 100px; /* Adjust size of profile image */
+            height: 100px; /* Adjust size of profile image */
+            object-fit: cover;
+            border: 3px solid rgb(35, 166, 63); /* Optional: border around the profile image */
+        }
+
+        /* Header navigation */
+        nav ul {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            padding: 0;
+            margin: 0;
+            list-style-type: none;
+        }
+
+        nav ul li {
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff; /* Make the nav items white */
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #4CAF50; /* Hover effect color */
+        }
+
+        /* Optional: Add smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Optional: Add a semi-transparent overlay on background image */
+        .background-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.3); /* Add slight darkness to background */
+            z-index: -1; /* Ensures the overlay stays behind the content */
+        }
+
+         /* Center the name */
+        .name-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Center horizontally */
+            justify-content: center; /* Center vertically */
+            margin-top: 20px; /* Add space above the name */
+        }
+
+        .name-container h1 {
+            margin: 0;
+            font-size: 36px; /* Adjust font size for your name */
+            font-weight: bold;
+        }
+    </style>
+
+    <!-- Header content with profile image and navigation links -->
+    <div class="background-overlay"></div>
+    <div class="container">
+        <div class="profile-container">
+            <img src="assets/images/pfp.jpg" alt="Profile Picture"> <!-- Replace with your profile image path -->
+            <div class="name-container">
+                <h1 class="text-white">Abrar Ahmed Mohammed</h1> <!-- Your name or title -->
+            </div>
+        </div>
+    
+        
+        <nav>
+            <ul>
+                <li><a href="#summary" class="hover:underline">Summary</a></li>
+                <li><a href="#experience" class="hover:underline">Experience</a></li>
+                <li><a href="#education" class="hover:underline">Education</a></li>
+                <li><a href="#projects" class="hover:underline">Projects</a></li>
+                <li><a href="#skills" class="hover:underline">Skills</a></li>
+                <li><a href="#footer" class="hover:underline">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
